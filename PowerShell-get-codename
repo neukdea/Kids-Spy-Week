@@ -1,0 +1,6 @@
+$engAdj = gc $env:USERPROFILE\Desktop\SpyWeek\english-adjectives.txt
+$animal = gc $env:USERPROFILE\Desktop\SpyWeek\Animals.txt
+
+Function Get-CodeName {
+    "Your Spy/Agent Name is " + (get-random $engAdj) + (" ") + (Get-Random $animal) + "!!"
+    }
